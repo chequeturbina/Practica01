@@ -1,7 +1,7 @@
 <%-- 
-    Document   : persona
-    Created on : 20/02/2017, 11:18:45 PM
-    Author     : jonathan
+    Document   : registrar
+    Created on : 25/02/2017, 01:59:21 PM
+    Author     : emmanuel
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>${persona}!</h1>
-        <h2>${password}!</h2>
+        <h1>Hello World!</h1>
     </body>
 </html>

@@ -35,8 +35,9 @@ public class Controlador {
     @RequestMapping(value="/persona2", method = RequestMethod.POST)
     public ModelAndView persona2(ModelMap model,HttpServletRequest request){
         String p = request.getParameter("nombre2");
+        String q = request.getParameter("password");
         model.addAttribute("persona", p);
-        return new ModelAndView("persona",model);
-    
+        model.addAttribute("password", q);
+        return new ModelAndView("persona", model);
     }
 }
