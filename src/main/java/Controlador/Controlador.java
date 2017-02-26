@@ -24,11 +24,29 @@ public class Controlador {
         return "inicio";
     }
     
-    @RequestMapping(value="/persona1", method = RequestMethod.GET)
-    public ModelAndView persona1(ModelMap model,HttpServletRequest request){
-        String p = request.getParameter("nombre1");
-        model.addAttribute("persona", p);
-        return new ModelAndView("persona",model);
+    @RequestMapping(value="/registrar", method = RequestMethod.GET)
+    public ModelAndView registrar(ModelMap model){
+    return new ModelAndView("registrar", model);
+    
+    }
+    
+    @RequestMapping(value="/registrar1", method = RequestMethod.GET)
+    public ModelAndView registrar1(ModelMap model,HttpServletRequest request){
+        String p = request.getParameter("nombre3");
+        String q = request.getParameter("carrera");
+        String r = request.getParameter("dia");
+        String s = request.getParameter("mes");
+        String t = request.getParameter("year");
+        String u = request.getParameter("correo");
+        String v = request.getParameter("password");
+        model.addAttribute("nombre3", p);
+        model.addAttribute("carrera", q);
+        model.addAttribute("dia", r);
+        model.addAttribute("mes", s);
+        model.addAttribute("year", t);
+        model.addAttribute("correo", u);
+        model.addAttribute("password", v);
+        return new ModelAndView("registro",model);
     
     }
     
@@ -40,4 +58,5 @@ public class Controlador {
         model.addAttribute("password", q);
         return new ModelAndView("persona", model);
     }
+ 
 }

@@ -19,7 +19,7 @@
             <h3> <input id="password" name="password" type="password" placeholder="Password"></h3>
             <h4> <button>Aceptar</button> </h4>   
         </form>
-        <form action="/Practica01/registrar">
+        <form method="GET" action="/Practica01/registrar">
             <button>Registrar</button>
         </form>
     </center>
