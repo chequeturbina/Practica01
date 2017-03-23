@@ -24,10 +24,16 @@ public class Controlador {
         return "inicio";
     }
     
-    @RequestMapping(value="/registrar", method = RequestMethod.GET)
-    public ModelAndView registrar(ModelMap model){
-    return new ModelAndView("registrar", model);
+    @RequestMapping(value = "/registrar", method = RequestMethod.GET)
+    public ModelAndView registrar(ModelMap model) {
+        return new ModelAndView("registrar", model);
+
+    }
     
+    @RequestMapping(value = "/mapa", method = RequestMethod.GET)
+    public ModelAndView mapa(ModelMap model) {
+        return new ModelAndView("mapa", model);
+
     }
     
     @RequestMapping(value="/registrar1", method = RequestMethod.GET)

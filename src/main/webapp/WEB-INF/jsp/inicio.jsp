@@ -20,7 +20,10 @@
             <h4> <button>Aceptar</button> </h4>   
         </form>
         <form method="GET" action="/Practica01/registrar">
-            <button>Registrar</button>
+            <h5><button>Registrar</button></h5>
+        </form>
+        <form method="GET" action="/Practica01/mapa">
+            <h6><button>Mapa</button></h6>
         </form>
     </center>
     </body>
